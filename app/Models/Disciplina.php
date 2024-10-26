@@ -10,6 +10,7 @@ class Disciplina extends Model
     use HasFactory;
     
     protected $fillable = [
+            'aluno',
             'nome_disciplina',
             'nota_disciplina',       
             'falta_disciplina',

@@ -32,7 +32,7 @@
 
                     <form action=" {{ route('disciplina.store') }} " method="POST" class="row g-3" enctype="multipart/form-data" >
                             @csrf
-
+ 
                             <div class="col-md-6">
 
                                 <label for="inputState" class="form-label">Aluno:</label>
@@ -51,7 +51,7 @@
                             <div class="col-md-6">
 
                                 <label for="inputState" class="form-label">Disciplina:</label>
-                                <select name="disciplina" id="disciplina" class="form-select">
+                                <select name="nome_disciplina" id="nome_disciplina" class="form-select">
                                     <option selected>Escolha uma opção...</option>
                                     <option value="Arte">Arte</option>
                                     <option value="Geografia">Geografia</option>
@@ -65,13 +65,13 @@
                             <div class="col-12">
 
                                 <label for="nota_disciplina"  class="form-label">NOTA DISCIPLINA:</label>
-                                <input type="text" class="form-control" name="nota_disciplina" placeholder="" id="nota_disciplina" required >
+                                <input type="number" class="form-control" name="nota_disciplina" placeholder="" id="nota_disciplina" required >
 
                             </div>
                             <div class="col-md-6">
 
                                 <label for="falta_disciplina"  class="form-label">FALTA DISCIPLINA:</label>
-                                <input type="text" class="form-control" name="falta_disciplina" placeholder="" id="falta_disciplina" required >
+                                <input type="number" class="form-control" name="falta_disciplina" placeholder="" id="falta_disciplina" required >
                             </div>
                             
                             {{-- <label for="inputState" class="form-label">State</label>

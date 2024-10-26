@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DisciplinaController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource. 
      */
     public function index()
     {
@@ -34,6 +34,7 @@ class DisciplinaController extends Controller
         // Aqui é que a mágica acontece!!😎😎
 
         $request->validate([
+            'aluno'                    => 'required',
             'nome_disciplina'          => 'required',
             'nota_disciplina'          => 'required|numeric',
             'falta_disciplina'         => 'required|numeric',
